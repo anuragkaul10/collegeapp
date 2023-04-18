@@ -5,9 +5,9 @@ export default function QuoteSection() {
   return (
     <div className="section quote">
       <p className="qoute-text">
-        <FontAwesomeIcon icon={faQuoteLeft} /> Food is everything we are. It's an extension of nationalist feeling, ethnic feeling, your personal history, your province, your region, your tribe, your grandma. It's inseparable from those from the get-go.
+        <FontAwesomeIcon icon={faQuoteLeft} /> Although the skills aren’t hard to learn, finding the happiness and finding the satisfaction and finding fulfillment in continuously serving somebody else something good to eat, is what makes a really good restaurant.
       </p>
-      <p className="qoute-auther">- Anthony Bourdain</p>
+      <p className="qoute-auther">- Fivel Stewart, Chef.</p>
     </div>
   );
 }

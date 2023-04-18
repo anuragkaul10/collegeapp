@@ -1,8 +1,7 @@
 import CustomImage from "./CustomImage";
 import { Link } from "react-router-dom";
 
-import { faCog } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export default function HeroSection() {
   const images = ["/images/gallery/img1.jpg", "/images/gallery/img2.jpg", "/images/gallery/img3.jpg", "/images/gallery/img4.jpg", "/images/gallery/img5.jpeg", "/images/gallery/img6.jpg", "/images/gallery/img7.jpeg", "/images/gallery/img8.jpg", "/images/gallery/img9.jpg"];
@@ -25,9 +24,7 @@ export default function HeroSection() {
           ))}
         </div>
       </div>
-      <Link to="/settings">
-        <FontAwesomeIcon icon={faCog} />
-      </Link>
+
     </>
   );
 }

@@ -3,14 +3,15 @@ export default function Footer() {
     <div className="footer container">
       <div className="footer-section">
         <p className="title">AnuragKaul.com</p>
-        <p>This is a place where you can please your soul and tummy with delicious food recepies of all cuisine. And our service is absolutely free.</p>
+        <p>Sharing food with another human being is an intimate act that should not be indulged in lightly.</p>
+        <p>“Hello to You! You will find food, harmony, and laughter here.”</p>
         <p>&copy; 2023 | All Rights Reserved</p>
       </div>
       <div className="footer-section">
         <p className="title">Contact Us</p>
         <p>anuragkaul2810@gmail.com</p>
         <p>+987-654-321</p>
-        <p>7650 Street Paris</p>
+        <p>22C Chandigarh</p>
       </div>
       <div className="footer-section">
         <p className="title">Socials</p>

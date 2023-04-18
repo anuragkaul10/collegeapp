@@ -2,7 +2,7 @@
   --background-color: white;
   --background-light: white;
   --shadow-color: rgba(0, 0, 0, 0.2);
-  --primary-color: rgb(255, 0, 86);
+  --primary-color: #2196f3;
   --text-color: #0a0a0a;
   --text-light: #575757;
   --font-size: 16px;
@@ -195,5 +195,18 @@ main {
 @media screen and (max-width: 480px) {
   .container {
     padding-inline: 3vw;
+  }
+}
+
+.settings_position {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 35px;
+  color: var(--text-light);
+  z-index: 999;
+  &:hover {
+    font-size: 40px;
+    color: var(--primary-color);
   }
 }

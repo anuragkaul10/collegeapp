@@ -32,7 +32,7 @@
 }
 
 button[type="submit"] {
-  background-color: #2196f3;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -42,8 +42,9 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0b7dda;
+  background-color: rgb(243, 234, 74);
 }
+
 .main-sign {
   padding: 100px;
 }
@@ -82,7 +83,7 @@ button[type="submit"]:hover {
 }
 
 button[type="submit"] {
-  background-color: #2196f3;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -92,5 +93,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0b7dda;
+  background-color: rgb(243, 234, 74);
 }

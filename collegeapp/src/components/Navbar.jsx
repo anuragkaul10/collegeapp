@@ -5,6 +5,7 @@ import { useState } from "react";
 import Sidebar from "./Sidebar";
 
 import { faHome, faList, faCog } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Navbar() {
   let navigate = useNavigate();
@@ -14,8 +15,6 @@ export default function Navbar() {
     alert("you have been logged out");
     navigate("/signup");
   };
-  //
-  //
   //
   const [showSidebar, setShowSidebar] = useState(false);
   const location = useLocation();
@@ -30,19 +29,6 @@ export default function Navbar() {
       path: "/recipes",
       icon: faList,
     },
-    {
-      name: "Settings",
-      path: "/settings",
-      icon: faCog,
-    },
-    // {
-    //   name: "Signup",
-    //   path: "/signup",
-    // },
-    // {
-    //   name: "Login",
-    //   path: "/login",
-    // },
   ];
 
   function closeSidebar() {
@@ -51,8 +37,12 @@ export default function Navbar() {
   return (
     <>
       <div className="Navbar container">
-        <Link to="/" className="logo">
-          A<span>nurag</span>Kaul
+        <Link to="/" className="logo" style={{ fontFamily: "Better Together", letterSpacing: "1px" }}>
+          T
+          <span>
+            <b>andoori</b>
+          </span>
+          Nights
         </Link>
         <div className="Nav-links">
           {links.map((link) => (
@@ -83,6 +73,10 @@ export default function Navbar() {
         </div>
       </div>
       {showSidebar && <Sidebar close={closeSidebar} links={links} />}
+
+      <Link to="/settings" className="settings_position">
+        <FontAwesomeIcon icon={faCog} />
+      </Link>
     </>
   );
 }

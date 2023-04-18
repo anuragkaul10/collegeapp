@@ -1,0 +1,26 @@
+requirements
+--node js
+--mongodb and MongoDBCompass
+
+--postman/thunder-client(only if post data through api's)
+
+Best ide to run: VS CODE
+How to run?
+
+1.cd into.....   \College Project folder
+
+2.Open two terminals in VS Code
+
+3.Through 1st terminal:
+cd into /collegeapp
+3.1)then---->npm install
+3.2)then---->npm start
+
+4.Through 2nd terminal:
+cd into /backend
+4.1)then---->npm install
+4.2)then---->npm start
+
+
+Note:npm install is needed to install required node modules.
+--anurag kaul
