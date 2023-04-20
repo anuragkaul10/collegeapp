@@ -51,9 +51,14 @@ export default function Navbar() {
             </Link>
           ))}
           {user ? (
-            <Link to="/signup" onClick={logout} className={location.pathname === "/signup" ? "active" : ""}>
-              Logout
-            </Link>
+            <>
+              <Link to="/addrecipes" className={location.pathname === "/addrecipes" ? "active" : ""}>
+                Add Recipes
+              </Link>
+              <Link to="/signup" onClick={logout} className={location.pathname === "/signup" ? "active" : ""}>
+                Logout
+              </Link>
+            </>
           ) : (
             <>
               <Link to="/signup" className={location.pathname === "/signup" ? "active" : ""}>

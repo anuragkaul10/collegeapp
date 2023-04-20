@@ -2,22 +2,16 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SignUp() {
-  //
-  //
-  //
   const [form, setForm] = useState({});
   const navigate = useNavigate();
-
   //
   //
   const handleForm = (e) => {
-    // console.log(e.target.value, e.target.name);
     setForm({
       ...form,
-      [e.target.name]: e.target.value, //key in []
+      [e.target.name]: e.target.value,
     });
   };
-  //
   //
   //
   const handleSubmit = async (e) => {
@@ -28,10 +22,8 @@ function SignUp() {
       headers: { "Content-Type": "application/json" },
     });
     console.log(response);
-    // const data = await response.text(); //otherwise json
     const data = await response.json();
     console.log(data);
-    //  console.log(form);
     //
     //
     if (data.password) {
@@ -60,7 +52,9 @@ function SignUp() {
             <label htmlFor="confirm-password">Confirm Password:</label>
             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" onChange={handleForm} required />
           </div>
-          <button type="submit">Sign Up</button>
+          <button className="signup-button" type="submit">
+            Sign Up
+          </button>
         </form>
       </section>
     </div>

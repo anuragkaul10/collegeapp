@@ -1,0 +1,56 @@
+.main-add {
+  padding: 100px;
+}
+.add-form {
+  max-width: 500px;
+  margin: 0 auto;
+
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-form-group {
+  margin-bottom: 20px;
+}
+
+.add-form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.add-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  max-width: 100%;
+  height: 120px;
+  max-height: 120px;
+}
+.add-recipe-button {
+  background-color: red;
+  padding: 6px 25px;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
