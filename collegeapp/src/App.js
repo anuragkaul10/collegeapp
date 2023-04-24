@@ -10,8 +10,9 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import AddRecipes from "./components/AddRecipes";
 
-const App = () => {
+function App() {
   let user = localStorage.getItem("user");
+
   return (
     <Router>
       <Navbar />
@@ -34,6 +35,6 @@ const App = () => {
       <Footer />
     </Router>
   );
-};
+}
 
 export default App;
