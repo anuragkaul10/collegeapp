@@ -9,8 +9,8 @@ export default function HeroSection() {
     <>
       <div className="section hero">
         <div className="col typography">
-          <h1 className="title">What Are We About</h1>
-          <p className="info">FoodiesHub is a place where you can please your soul and tummy with delicious food recepies of all cuisine. And our service is absolutely free. So start exploring now.</p>
+          <h1 className="title">What Are We About?</h1>
+          <p className="info">One of the reasons that people enjoy coming to a great restaurant is that when an extraordinary meal is placed in front of them, they feel honored, respected, and even a little bit loved.</p>
           <button className="btn">
             <Link to="/recipes" style={{ color: "white" }}>
               explore&nbsp;
