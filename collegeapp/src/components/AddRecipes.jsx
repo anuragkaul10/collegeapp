@@ -70,7 +70,7 @@ export default function AddRecipes() {
               <textarea id="ingredients" name="ingredients" placeholder="Enter your ingredients" form="from-add-id" rows="5" cols="55" onChange={handleForm} required />
             </div>
             <div className="add-form-group">
-              <label htmlFor="directions">Directions</label>
+              <label htmlFor="directions">Instructions</label>
               <textarea id="directions" name="directions" placeholder="Enter your directions" form="from-add-id" rows="5" cols="55" onChange={handleForm} required />
             </div>
 
