@@ -5,6 +5,7 @@ const User = require("./schema");
 
 const app = express();
 app.use(express.json());
+
 app.use(cors());
 
 app.post("/signup", async (req, res) => {
@@ -20,5 +21,8 @@ app.post("/login", async (req, res) => {
     else res.send({ result: "user not found" });
   } else res.send({ result: "user not found" });
 });
+
+//
+//
 
 app.listen(5000);
