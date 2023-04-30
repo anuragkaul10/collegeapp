@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
 
-import { faHome, faList, faCog } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faList, faCog, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Navbar() {
@@ -32,6 +32,7 @@ export default function Navbar() {
     {
       name: "About Us",
       path: "/aboutus",
+      icon: faUser,
     },
   ];
 

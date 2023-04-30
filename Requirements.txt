@@ -1,0 +1,12 @@
+Requirements to Open our Project and See its functionality:
+Software Requirements:
+1.OS: Windows:10,11
+2.Node js v18+ installed.
+3.mongodb CE and mongodb compass installed.
+
+
+Hardware Requirements:
+2gb RAM.
+3 GB Hardisk space to install s/w and contain our Web Application.
+processor i3 6th gen+
+

@@ -9,18 +9,37 @@ How to run?
 
 1.cd into.....   \College Project folder
 
-2.Open two terminals in VS Code
+2.Open three terminals in VS Code
 
 3.Through 1st terminal:
 cd into /collegeapp
-3.1)then---->npm install
-3.2)then---->npm start
+3.1)then---->npm start
 
 4.Through 2nd terminal:
 cd into /backend
-4.1)then---->npm install
-4.2)then---->npm start
+4.1)then---->node user_data.js
+
+4.Through 3rd terminal:
+cd into /backend
+4.1)then---->node recipe_data.js
 
 
-Note:npm install is needed to install required node modules.
---anurag kaul
+
+-- Himanshi and Anurag project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
