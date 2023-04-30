@@ -9,6 +9,7 @@ import Settings from "./pages/Settings";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import AddRecipes from "./components/AddRecipes";
+import AbouUs from "./pages/Aboutus";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/addrecipes" element={<AddRecipes />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/aboutus" element={<AbouUs />} />
         </Routes>
       </div>
       <Footer />

@@ -37,6 +37,7 @@ export default function AddRecipes() {
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
+    alert("Congratulations! Your recipe has been added!");
     window.location.reload();
   }
   return (
@@ -114,16 +115,6 @@ export default function AddRecipes() {
           </form>
         </section>
       </div>
-      {/* <div className="or-text">--OR-- </div>
-      <div className="link-section">
-        <label htmlFor="or-text">Adapt Link:</label>
-        <form action="">
-          <input type="text" id="author" name="or-text" placeholder="Paste your link" onChange={handleForm} required />
-          <button className="add-recipe-button" type="submit">
-            Submit
-          </button>
-        </form>
-      </div> */}
     </>
   );
 }

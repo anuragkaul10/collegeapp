@@ -1,0 +1,32 @@
+.section {
+  .col {
+    .owner-imagedata {
+      width: 70%;
+      border-radius: 50%;
+    }
+  }
+}
+.section .col.ownerimage {
+  text-align: center;
+}
+.aboutus-h1 {
+  margin-top: 2vw;
+  text-align: center;
+  font-size: 4em;
+  font-family: "better together";
+  font-weight: bolder;
+  color: var(--text-color);
+}
+
+.col.ownerimage {
+  .owner-name {
+    font-family: "better together";
+    font-size: 3em;
+    color: var(--primary-color);
+  }
+  .owner-details {
+    font-family: "sans-sherif";
+    font-weight: bold;
+    padding: 25px;
+  }
+}

@@ -29,6 +29,10 @@ export default function Navbar() {
       path: "/recipes",
       icon: faList,
     },
+    {
+      name: "About Us",
+      path: "/aboutus",
+    },
   ];
 
   function closeSidebar() {

@@ -48,8 +48,8 @@ function SignUp() {
             <input type="password" id="password" name="password" placeholder="Enter your password" onChange={handleForm} required />
           </div>
           <div className="form-group">
-            <label htmlFor="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" onChange={handleForm} required />
+            <label htmlFor="City">City:</label>
+            <input type="text" id="City" name="City" placeholder="Enter your City" onChange={handleForm} required />
           </div>
           <button className="signup-button" type="submit">
             Sign Up
