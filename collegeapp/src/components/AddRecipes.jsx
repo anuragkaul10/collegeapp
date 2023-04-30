@@ -1,88 +1,8 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
-// import React from "react";
-// import axios from "axios";
 
 export default function AddRecipes() {
-  // const [title, setTitle] = useState("");
-  // const [description, setDescription] = useState("");
-  // const [author, setAuthor] = useState("");
-  // const [ingredients, setIngredients] = useState("");
-  // const [instructions, setInstructions] = useState("");
-  // const [prepTime, setPrepTime] = useState("");
-  // const [cookTime, setCookTime] = useState("");
-  // const [totalTime, setTotalTime] = useState("");
-  // const [image, setImage] = useState(null);
-
-  // const handleTitleChange = (event) => {
-  //   setTitle(event.target.value);
-  // };
-
-  // const handleDescriptionChange = (event) => {
-  //   setDescription(event.target.value);
-  // };
-
-  // const handleAuthorChange = (event) => {
-  //   setAuthor(event.target.value);
-  // };
-
-  // const handleIngredientsChange = (event) => {
-  //   setIngredients(event.target.value);
-  // };
-
-  // const handleInstructionsChange = (event) => {
-  //   setInstructions(event.target.value);
-  // };
-
-  // const handlePrepTimeChange = (event) => {
-  //   setPrepTime(event.target.value);
-  // };
-
-  // const handleCookTimeChange = (event) => {
-  //   setCookTime(event.target.value);
-  // };
-
-  // const handleTotalTimeChange = (event) => {
-  //   setTotalTime(event.target.value);
-  // };
-
-  // const handleFileInputChange = (event) => {
-  //   setImage(event.target.files[0]);
-  // };
-
-  // const handleUpload = (e) => {
-  //   e.preventDefault();
-  //   const reader = new FileReader();
-  //   reader.readAsDataURL(image);
-  //   reader.onload = () => {
-  //     const data = {
-  //       title: title,
-  //       description: description,
-  //       author: author,
-  //       ingredients: ingredients,
-  //       instructions: instructions,
-  //       preptime: prepTime,
-  //       cooktime: cookTime,
-  //       totaltime: totalTime,
-  //       image: reader.result,
-  //       // image: image,
-  //     };
-  //     axios
-  //       .post("http://localhost:5000/addrecipes", data, {
-  //         // method: "POST",
-  //         // body: JSON.stringify(data),
-  //         headers: { "Content-Type": "multipart/form-data" },
-  //       })
-  //       .then((response) => {
-  //         console.log(response.data);
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   };
-  // };
-
   const [file, setFile] = useState(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -110,15 +30,15 @@ export default function AddRecipes() {
     data.append("cooktime", cooktime);
     data.append("totaltime", totaltime);
 
-    fetch("http://localhost:5000/addrecipes", {
+    fetch("http://localhost:8000/addrecipes", {
       method: "POST",
       body: data,
     })
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
+    window.location.reload();
   }
-
   return (
     <>
       <div className="section">

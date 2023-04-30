@@ -22,7 +22,7 @@ const Login = () => {
       },
     });
     result = await result.json();
-    console.log(result);
+    // console.log(result);
 
     if (result.password) {
       localStorage.setItem("user", JSON.stringify(result));

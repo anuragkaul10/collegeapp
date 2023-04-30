@@ -21,10 +21,9 @@ function SignUp() {
       body: JSON.stringify(form),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
+    // console.log(response);
     const data = await response.json();
-    console.log(data);
-    //
+    // console.log(data);
     //
     if (data.password) {
       localStorage.setItem("user", JSON.stringify(data));
