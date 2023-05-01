@@ -24,10 +24,8 @@ cd into /backend
 4.1)then---->node recipe_data.js
 
 
-
 -- Himanshi and Anurag project.
-
-
+https://github.com/anuragkaul10/collegeapp
 
 
 
