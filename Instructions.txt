@@ -9,19 +9,26 @@ How to run?
 
 1.cd into.....   \College Project folder
 
+
+Note:Node Nodules are not pushed into github.(.gitignore)
+
+
 2.Open three terminals in VS Code
 
 3.Through 1st terminal:
 cd into /collegeapp
-3.1)then---->npm start
+3.1)then---->npm install  (to install required node modules inside package.json for react app.)--one time only.
+3.2)then---->npm start
 
 4.Through 2nd terminal:
 cd into /backend
+then---->npm install  (to install required node modules inside package.json for backend.)--one time only.
+
 4.1)then---->node user_data.js
 
-4.Through 3rd terminal:
+5.Through 3rd terminal:
 cd into /backend
-4.1)then---->node recipe_data.js
+5.1)then---->node recipe_data.js
 
 
 -- Himanshi and Anurag project.
