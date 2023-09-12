@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/61289954/react-react-router-go-back-to-the-previous-component-bypassing-changes-in-same
